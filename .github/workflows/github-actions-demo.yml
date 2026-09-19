@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Step \#1
-        run: |
-          echo "Hello, world! from github actions"
-          echo "2+2 = 4" 
+      - name: Clonar repositorio
+        run: actions/checkout@v6
+      - name: Ejecutar comando de python
+        run: python3 scripts/hello_world.py
